@@ -2,7 +2,6 @@
     'use strict';
     
     angular.module( 'LunchCheck', [] ).controller( 'LunchCheckController', function ( $scope ) {
-        console.log( "hello" );
         $scope.lunchMenu = '';
         $scope.checkLunch = function() {
             var menuItemCount = $scope.lunchMenu.split( ',' ).length;

@@ -2,6 +2,7 @@
     'use strict';
     
     angular.module( 'LunchCheck', [] ).controller( 'LunchCheckController', function ( $scope ) {
+        $scope.lunchMenu = '';
         $scope.checkLunch = function() {
             var menuItemCount = $scope.lunchMenu.split( ',' ).length;
             if ( menuItemCount > 3 ) {
